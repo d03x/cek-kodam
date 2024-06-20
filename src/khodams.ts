@@ -49,6 +49,30 @@ const Kodam = [
         "kesukaan": "Mengawasi hutan dan menjaga keseimbangan alam."
     },
     {
+        "nama": "Macan Ciputat",
+        "asal": "Banten",
+        "deskripsi": "Macan ini memiliki aura yang kuat dan sering terlihat di daerah Ciputat. Dia dikenal sebagai penjaga yang tangguh.",
+        "kesukaan": "Menjaga wilayah dan memberi perlindungan."
+    },
+    {
+        "nama": "Macan Naga",
+        "asal": "Jawa Barat",
+        "deskripsi": "Khodam ini memiliki penampilan seperti macan namun dengan sisik naga. Dia sangat kuat dan bijaksana.",
+        "kesukaan": "Mengawasi pegunungan dan memberi nasihat bijak."
+    },
+    {
+        "nama": "Naga Bonar",
+        "asal": "Sumatera Utara",
+        "deskripsi": "Khodam ini sering tampil gagah berani dan suka membantu orang-orang yang membutuhkan dengan kekuatan naganya.",
+        "kesukaan": "Membantu dan melindungi orang yang lemah."
+    },
+    {
+        "nama": "Khodam Tobrut",
+        "asal": "Sumatera Utara",
+        "deskripsi": "Khodam ini sangat kuat dan tangguh. Dia sering membantu penduduk dalam pekerjaan berat dan melindungi dari gangguan jahat.",
+        "kesukaan": "Membantu pekerjaan berat dan menjaga ketertiban."
+    },
+    {
         "nama": "Bencong Cibaduyut",
         "asal": "Bandung",
         "deskripsi": "Khodam ini terkenal dengan gaya nyentriknya. Suka muncul di toko-toko sepatu dan memberikan saran fashion yang unik.",
@@ -73,27 +97,20 @@ const Kodam = [
         "kesukaan": "Memberi nasihat bijak dan mendengarkan masalah orang."
     },
     {
-        "nama": "Khodam Tobrut",
-        "asal": "Sumatera Utara",
-        "deskripsi": "Khodam ini sangat kuat dan tangguh. Dia sering membantu penduduk dalam pekerjaan berat dan melindungi dari gangguan jahat.",
-        "kesukaan": "Membantu pekerjaan berat dan menjaga ketertiban."
-    },
-    {
         "nama": "Gajah Albino",
         "asal": "Aceh",
         "deskripsi": "Khodam berbentuk gajah putih ini dianggap sangat suci dan membawa keberuntungan. Dia sering muncul di hutan-hutan Aceh.",
         "kesukaan": "Menjaga hutan dan membawa keberuntungan."
     }
 ]
-
-const cekRandom = ()=>{
-    return Math.floor(Math.random() * (Kodam.length+2 - 0+1)) + 0;
+const cekRandom = () => {
+    return Math.floor(Math.random() * (Kodam.length + 2 - 0 + 1)) + 0;
 
 }
 
 const checkKhodam = (index: number) => {
     return Kodam[index] ?? null;
-    
+
 };
 
 export { cekRandom, checkKhodam };

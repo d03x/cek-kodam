@@ -39,7 +39,7 @@ export default function CardKhodam() {
 
             if (kodam) {
                 Modal.success({
-                    title: `Kodam anda ${kodam.nama}`,
+                    title: `${data.nama} Kodam anda ${kodam.nama}`,
                     content: <>
                         <div>
 
