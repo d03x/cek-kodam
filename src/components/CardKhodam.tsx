@@ -14,13 +14,13 @@ import {
   checkKhodam,
 } from '../khodams';
 
-export default function CardKhodam(props: any) {
+export default function CardKhodam() {
 
     const [loading, setLoading] = useState<boolean>(false)
 
     function onFinishKodam(data: any) {
         setLoading(true)
-        const Kodam = new Promise(function (resolved, rejected) {
+        const Kodam = new Promise(function (resolved) {
             setTimeout(() => {
                 resolved(true);
             }, 2000)
